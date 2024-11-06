@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800;
+  }
+
+  /* Enhanced RTL support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="rtl"] .flex {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .space-x-1,
+  [dir="rtl"] .space-x-1\.5,
+  [dir="rtl"] .space-x-2,
+  [dir="rtl"] .space-x-3,
+  [dir="rtl"] .space-x-4,
+  [dir="rtl"] .space-x-6,
+  [dir="rtl"] .space-x-8 {
+    --tw-space-x-reverse: 1;
+  }
+
+  [dir="rtl"] .mr-2,
+  [dir="rtl"] .mr-4,
+  [dir="rtl"] .ml-2,
+  [dir="rtl"] .ml-4 {
+    margin-left: var(--tw-space-x-reverse);
+    margin-right: calc(var(--tw-space-x-reverse) * -1);
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Arabic font optimization */
+  .font-arabic {
+    font-family: "Noto Kufi Arabic", "Noto Sans Arabic", system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}

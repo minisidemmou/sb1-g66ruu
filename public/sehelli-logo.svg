@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light blue teardrop -->
+  <path d="M700 300 C700 500 500 700 300 700 C100 700 100 500 300 300 C500 100 700 100 700 300Z" fill="#38BDF8" transform="rotate(45 500 500)"/>
+  
+  <!-- Dark blue teardrop -->
+  <path d="M700 300 C700 500 500 700 300 700 C100 700 100 500 300 300 C500 100 700 100 700 300Z" fill="#1E40AF" transform="rotate(-45 500 500)"/>
+  
+  <!-- Text "Sehelli" -->
+  <text x="250" y="850" font-family="Arial, sans-serif" font-size="200" font-weight="bold">
+    <tspan fill="#38BDF8">Se</tspan>
+    <tspan fill="#1E40AF">helli</tspan>
+  </text>
+</svg>
